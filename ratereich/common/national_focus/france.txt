@@ -1,0 +1,261 @@
+focus_tree = {
+id = 'france'
+country = {
+factor=0
+modifier = {
+add = 10
+tag = FRA
+}
+}
+default = no
+#Custom focuses start here
+#Focus for Legacy of the 1934 Uprising 
+	focus = { 
+	id = legacyofthe1934uprising 
+	icon = GFX_goal_generic_propaganda 
+	bypass = {} 
+ ai_will_do = { factor = 1} 
+ x =2 
+ y =0 
+ mutually_exclusive = { } 
+ prerequisite = { } 
+ available = {  } 
+ cost = 10  
+  available_if_capitulated = yes  
+ completion_reward = { 
+  
+ 					add_national_unity = 0.20 
+ } 
+ }#Focus for A Motorized Force 
+	focus = { 
+	id = amotorizedforce 
+	icon = GFX_goal_generic_army_motorized 
+	bypass = {} 
+ ai_will_do = { factor = 1} 
+ x =6 
+ y =2 
+ mutually_exclusive = { } 
+ prerequisite = { focus = experimentwiththetank} 
+ available = {  } 
+ cost = 10  
+  available_if_capitulated = yes  
+ completion_reward = { 
+ add_tech_bonus = { 
+  bonus = 0.5  
+ uses = 1 
+ category = motorized_equipment  
+ } 
+ } 
+ }#Focus for Embrace Mechanization 
+	focus = { 
+	id = embracemechanization 
+	icon = GFX_goal_generic_build_tank 
+	bypass = {} 
+ ai_will_do = { factor = 1} 
+ x =6 
+ y =3 
+ mutually_exclusive = { } 
+ prerequisite = { focus = amotorizedforce} 
+ available = {  } 
+ cost = 10  
+  available_if_capitulated = yes  
+ completion_reward = { 
+ add_tech_bonus = { 
+  bonus = 0.5  
+ uses = 1 
+ category = land_doctrine 
+ } 
+ } 
+ }#Focus for Refined Doctrine 
+	focus = { 
+	id = refineddoctrine 
+	icon = GFX_goal_generic_army_artillery 
+	bypass = {} 
+ ai_will_do = { factor = 1} 
+ x =8 
+ y =3 
+ mutually_exclusive = { } 
+ prerequisite = { focus = infantrysupport} 
+ available = {  } 
+ cost = 10  
+  available_if_capitulated = yes  
+ completion_reward = { 
+ add_tech_bonus = { 
+  bonus = 0.5  
+ uses = 1 
+ category = land_doctrine 
+ } 
+ } 
+ }#Focus for Pour la France! 
+	focus = { 
+	id = pourlafrance 
+	icon = GFX_goal_generic_special_forces 
+	bypass = {} 
+ ai_will_do = { factor = 1} 
+ x =7 
+ y =4 
+ mutually_exclusive = { } 
+ prerequisite = { focus = refineddoctrine  focus = embracemechanization} 
+ available = {  } 
+ cost = 10  
+  available_if_capitulated = yes  
+ completion_reward = { 
+ country_event = { 
+ days = 1  
+ id = france.4 
+ } 
+ } 
+ }#Focus for A New French Army 
+	focus = { 
+	id = anewfrencharmy 
+	icon = GFX_focus_generic_commonwealth_build_infantry 
+	bypass = {} 
+ ai_will_do = { factor = 1} 
+ x =7 
+ y =0 
+ mutually_exclusive = { } 
+ prerequisite = { } 
+ available = {  } 
+ cost = 10  
+  available_if_capitulated = yes  
+ completion_reward = { 
+ army_experience= 20 
+ } 
+ }#Focus for Experiment with the Tank 
+	focus = { 
+	id = experimentwiththetank 
+	icon = GFX_focus_NZL_bob_semple_tank 
+	bypass = {} 
+ ai_will_do = { factor = 1} 
+ x =6 
+ y =1 
+ mutually_exclusive = { focus = refinetheartillery} 
+ prerequisite = { focus = anewfrencharmy} 
+ available = {  } 
+ cost = 10  
+  available_if_capitulated = yes  
+ completion_reward = { 
+ add_tech_bonus = { 
+  bonus = 0.5  
+ uses = 1 
+ category = armor 
+ } 
+ } 
+ }#Focus for Refine the Artillery 
+	focus = { 
+	id = refinetheartillery 
+	icon = GFX_goal_generic_army_artillery2 
+	bypass = {} 
+ ai_will_do = { factor = 1} 
+ x =8 
+ y =1 
+ mutually_exclusive = { focus = experimentwiththetank} 
+ prerequisite = { focus = anewfrencharmy} 
+ available = {  } 
+ cost = 10  
+  available_if_capitulated = yes  
+ completion_reward = { 
+ add_tech_bonus = { 
+  bonus = 0.5  
+ uses = 1  
+ category = artillery 
+ } 
+ } 
+ }#Focus for Infantry Support 
+	focus = { 
+	id = infantrysupport 
+	icon = GFX_goal_generic_army_doctrines 
+	bypass = {} 
+ ai_will_do = { factor = 1} 
+ x =8 
+ y =2 
+ mutually_exclusive = { } 
+ prerequisite = { focus = refinetheartillery} 
+ available = {  } 
+ cost = 10  
+  available_if_capitulated = yes  
+ completion_reward = { 
+ add_tech_bonus = { 
+  bonus = 0.5  
+ uses = 1 
+ category = infantry_weapons 
+ } 
+ } 
+ }#Focus for Formalize the new state 
+	focus = { 
+	id = formalizethenewstate 
+	icon = GFX_goal_molotov_ribbentrop_pact 
+	bypass = {} 
+ ai_will_do = { factor = } 
+ x =2 
+ y =1 
+ mutually_exclusive = { } 
+ prerequisite = { focus = legacyofthe1934uprising} 
+ available = {  } 
+ cost = 10  
+  available_if_capitulated = yes  
+ completion_reward = { 
+ news_event = news_event.1 
+ } 
+ }#Focus for One Party Rule 
+	focus = { 
+	id = onepartyrule 
+	icon = GFX_goal_generic_demand_territory 
+	bypass = {} 
+ ai_will_do = { factor = } 
+ x =0 
+ y =2 
+ mutually_exclusive = { focus = militaryrule} 
+  mutually_exclusive = { focus =afrenchmonarchy} 
+ prerequisite = { focus = formalizethenewstate} 
+ available = {  } 
+ cost = 10  
+  available_if_capitulated = yes  
+ completion_reward = { 
+ country_event = { 
+ days = 1  
+ id = france.1  
+ } 
+ } 
+ }#Focus for Military Rule 
+	focus = { 
+	id = militaryrule 
+	icon = GFX_goal_generic_political_pressure 
+	bypass = {} 
+ ai_will_do = { factor = } 
+ x =2 
+ y =2 
+ mutually_exclusive = { focus = onepartyrule} 
+  mutually_exclusive = { focus =afrenchmonarchy} 
+ prerequisite = { focus = formalizethenewstate} 
+ available = {  } 
+ cost = 10  
+  available_if_capitulated = yes  
+ completion_reward = { 
+ country_event = { 
+ days = 1  
+ id = france.2 
+ } 
+ } 
+ }#Focus for A French Monarchy 
+	focus = { 
+	id = afrenchmonarchy 
+	icon = GFX_focus_rom_royal_dictatorship 
+	bypass = {} 
+ ai_will_do = { factor = } 
+ x =4 
+ y =2 
+ mutually_exclusive = { focus = onepartyrule} 
+  mutually_exclusive = { focus =militaryrule} 
+ prerequisite = { focus = formalizethenewstate} 
+ available = {  } 
+ cost = 10  
+  available_if_capitulated = yes  
+ completion_reward = { 
+ country_event = { 
+ days = 1  
+ id = france.3 
+ } 
+ } 
+ }#End of focuses 
+}
