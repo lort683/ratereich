@@ -1,0 +1,72 @@
+﻿capital = 34
+
+oob = "WLL_1936"
+
+set_research_slots = 3
+
+
+
+set_technology = {
+	shipbuild_basics = 1
+	electronic_mechanical_engineering = 1
+	### Navy ###
+	early_submarine = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+	transport = 1
+	### Tanks ###
+	gwtank = 1
+	### INF ###
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	motorised_infantry = 1
+	tech_support = 1
+	tech_recon = 1
+	tech_engineers = 1
+	gw_artillery = 1
+	interwar_antitank = 1
+	### AIR ###
+	early_fighter = 1
+}
+
+
+
+set_politics = {
+
+	parties = {
+		democratic = { 
+		popularity = 21
+		}
+
+
+		neutrality = {
+		popularity = 36
+		}
+
+		fascism = {
+		popularity = 27
+		}
+		
+		communism = {
+		popularity = 16
+		}
+	}
+	
+	ruling_party = neutrality
+	last_election = "1918.11.27" #TBD. Leaving it at this for now. Awaiting further lore.
+	election_frequency = 48
+	elections_allowed = no
+}
+
+
+create_country_leader = {
+	name = "Leopold III"
+	desc = "POLITICS_LEOPOLD_III_DESC"
+	picture = "gfx/leaders/BEL/Portrait_Leopolid_III.tga"
+	expire = "1983.9.25"
+	ideology = despotic
+	traits = {
+		dislikes_germany
+		stout_defender
+	}
+}
