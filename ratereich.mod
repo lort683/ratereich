@@ -1,0 +1,9 @@
+name="Ratereich"
+path="mod/ratereich"
+tags={
+    "Balance"
+    "Gameplay"
+    "Events"
+    "Maps"
+}
+supported_version="1.4.2"
