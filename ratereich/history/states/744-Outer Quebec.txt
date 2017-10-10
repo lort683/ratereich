@@ -1,0 +1,23 @@
+state={
+	id=744
+	name="STATE_744"
+	
+	state_category = rural
+
+	history={
+		owner = QUE
+		buildings = {
+			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 1
+		}
+
+		add_core_of = QUE
+		add_core_of = CAN
+
+	}
+
+	provinces={
+		1356 4769 7893 983 3911 11902 10249 7875 1764 10700 12205 11682 2276 1341 7435 12276 4419 12223 13160
+	}
+	manpower=76500
