@@ -1,4 +1,7 @@
 CAN = "countries/Canada.txt"
+WLL = "countries/Wallonia.txt"
+FLN = "countries/Flanders.txt"
+FRI = "countries/Frisia.txt"
 QUE = "countries/Quebec.txt"
 NFL = "countries/Newfoundland.txt"
 BOS = "countries/Bosnia.txt"
