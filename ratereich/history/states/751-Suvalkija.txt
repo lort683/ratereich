@@ -1,0 +1,22 @@
+
+state={
+	id=751
+	name="STATE_751"
+	manpower = 253130
+	
+	state_category = town
+	
+	history={
+		owner = POL
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+		add_core_of = LIT
+		add_core_of = POL
+	}
+
+	provinces={
+		6407 3272 11312 6281
+	}
+}

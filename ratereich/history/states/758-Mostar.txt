@@ -1,0 +1,23 @@
+
+state={
+	id=758
+	name="STATE_758"
+	manpower =67320
+	
+	
+	state_category = town
+	
+	history={
+		owner = CRO
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+		}
+		add_core_of = BOS
+		add_core_of = CRO
+	}
+
+	provinces={
+		6942 9894 
+	}
+}
