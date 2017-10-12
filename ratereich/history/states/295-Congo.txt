@@ -1,7 +1,7 @@
 
 state={
 	id=295
-	name="STATE_295" # Leopoldville
+	name="STATE_295" # Wilhelminastad
 	manpower = 2240948
 	
 	state_category = rural
