@@ -1,0 +1,20 @@
+state={
+	id=718
+	name="STATE_718"
+	
+	state_category = pastoral
+
+	history={
+		owner = SPR
+		buildings = {
+			infrastructure = 2
+
+		}
+	}
+
+	provinces={
+		10025 4128 7716 9986 8016 1731 10858 1929 1516 1968 12795 2024 
+	}
+	manpower=4679078
+	buildings_max_level_factor=1.000
+}

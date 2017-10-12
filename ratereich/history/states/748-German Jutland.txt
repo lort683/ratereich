@@ -1,0 +1,25 @@
+state= {
+	id=748
+	name="STATE_748"
+	manpower = 372235
+	
+	state_category = town
+
+	history=
+	{
+		owner = GER
+		victory_points = {
+			6364 3 
+		}
+		buildings = {
+			infrastructure = 8
+			industrial_complex = 1
+		}
+		add_core_of = DEN
+		add_core_of = GER
+	}
+	provinces=
+	{
+		332 11251 3277 399 
+	}
+}
