@@ -1,0 +1,35 @@
+
+state={
+	id=613
+	name="STATE_613" # Shanghai
+	manpower = 7305100
+	
+	state_category = metropolis
+	
+	history={
+		owner = SHA
+		add_core_of = SHA
+		buildings = {
+			infrastructure = 9
+			industrial_complex = 1
+			dockyard = 1
+			7014 = {
+				naval_base = 6
+				coastal_bunker = 1
+				bunker = 2
+			}
+		}
+		victory_points = {
+			11913 20 
+		}
+		victory_points = {
+			7014 10
+		}
+
+
+	}
+
+	provinces = {
+		7014 12076
+	}
+}
