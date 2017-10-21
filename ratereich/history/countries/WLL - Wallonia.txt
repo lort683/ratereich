@@ -1,0 +1,85 @@
+﻿capital = 34
+
+oob = "WLL_1936"
+
+set_research_slots = 3
+
+add_ideas = {
+	extensive_conscription
+}
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_recon = 1
+	tech_engineers = 1
+	motorised_infantry = 1
+	early_fighter = 1
+	trench_warfare = 1
+
+}
+
+
+
+
+set_politics = {
+
+	parties = {
+		reactionaryism = { 
+			popularity = 26
+		}
+
+		revolutionary_nationalism = {
+			popularity = 8
+		}
+		
+		right_authoritarianism = {
+			popularity = 4
+		}
+
+		vanguard_socialism = {
+			popularity = 16
+		}
+
+		libertarian_socialism = {
+			popularity = 17
+		}
+
+		social_conservatism = {
+			popularity = 8
+		}
+
+		market_liberalism = {
+			popularity = 2
+		}
+
+		social_liberalism = {
+			popularity = 12
+		}
+
+		social_democratism = {
+			popularity = 12
+		}
+	}
+	
+	ruling_party = reactionaryism
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_national_unity = 0.75
+
+create_country_leader = {
+	name = Albert I
+	desc = "POLITICS_KING_ALBERT_DESC"
+	picture = "Portrait_Belgium_King_Albert.dds"
+	expire = "1965.1.1"
+	ideology = reactionaryism
+	traits = {
+		ww_one_trauma
+		dislikes_germany
+		cornered_fox
+	}
+}
