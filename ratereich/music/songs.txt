@@ -1,0 +1,17 @@
+﻿#WALLONIA
+music = {
+	song = "wallonia"
+	
+	chance = {
+		modifier = {
+			factor = 0
+			not = {
+				tag = WLL
+			}
+		}	
+		modifier = {
+			factor = 2
+			tag = WLL
+		}	
+	}	
+}
