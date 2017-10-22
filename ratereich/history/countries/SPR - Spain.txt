@@ -1,4 +1,4 @@
-﻿capital = 34
+﻿capital = 41
 
 oob = "WLL_1936"
 
@@ -26,32 +26,22 @@ set_technology = {
 set_politics = {
 
 	parties = {
-		reactionaryism = { 
-			popularity = 26
-		}
-
-		revolutionary_nationalism = {
-			popularity = 8
-		}
 		
-		right_authoritarianism = {
-			popularity = 4
-		}
 
 		vanguard_socialism = {
-			popularity = 16
+			popularity = 5
 		}
 
 		libertarian_socialism = {
-			popularity = 17
+			popularity = 12
 		}
 
 		social_conservatism = {
-			popularity = 8
+			popularity = 7
 		}
 
 		market_liberalism = {
-			popularity = 2
+			popularity = 52
 		}
 
 		social_liberalism = {
@@ -63,7 +53,7 @@ set_politics = {
 		}
 	}
 	
-	ruling_party = reactionaryism
+	ruling_party = market_liberalism
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
@@ -72,14 +62,12 @@ set_politics = {
 set_national_unity = 0.75
 
 create_country_leader = {
-	name = "Albert I"
-	desc = "POLITICS_KING_ALBERT_DESC"
-	picture = "Portrait_Wallonia_King_Albert.dds"
+	name = "Manuel Portela Valladares"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "Manuel_Portela.dds"
 	expire = "1965.1.1"
-	ideology = absolutism
+	ideology = classical_liberalism
 	traits = {
-		ww_one_trauma
-		dislikes_germany
-		cornered_fox
+		#
 	}
-}
+} 
